@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>JustWatchh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="popolari.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/ webicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="api.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-mobile">
+            <div id="menu">
+                <img class="images" id="burger-menu" src=" menu.png">
+                <div id="mobile-links">
+                    <a href="JustWatch.html">Home</a>
+                    <a href="popolari.html">Popolari</a>
+                    <a href="liste.html">Liste</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="About.html">About</a>
+                </div>
+            </div>
+            <img src="JustWatch-logo-small.png" id="logo-mobile">
+            <img src=" user.png" class="user images" id="user-mobile">
+        </nav>
+        <nav id="main-nav">
+            <div id="main"><img src="JustWatch-logo-small.png"></div>
+            <a href="JustWatch.html">Home</a>
+            <a href="popolari.html">Popolari</a>
+            <a href="liste.html">Liste</a>
+            <a href="faq.html">FAQ</a>
+            <a href="About.html">About</a>
+            <img src="user.png" class="user">
+        </nav>
+    </header>
+    <section id="login-modal" class="modals">
+        <div class="modal">
+            <div class="modal-title">
+                <h2>Account JustWatch</h2>
+                <div class="modal-close">X</div>
+            </div>
+            <div class="modal-body">
+                <div class="horizontal">
+                    <span>Email:</span><input type="text" class="email" required>
+                </div>
+                <div class="horizontal">
+                    <span>Password:</span><input type="password" class="password" required>
+                </div>
+                <div class="horizontal" id="register">
+                    <p>Non hai ancora un account?</p><a id="change-modal">Registrati</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-buttons">
+                    <input type="button" class="enter" value="login">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="register-modal" class="modals">
+        <div class="modal">
+            <div class="modal-title">
+                <div id="back">⇦</div>
+                <h2>Account JustWatch</h2>
+                <div class="modal-close">X</div>
+            </div>
+            <div class="modal-body">
+                <div class="horizontal">
+                    <span>Email:</span><input type="text" class="email" required>
+                </div>
+                <div class="horizontal">
+                    <span>Name:</span><input type="text" class="name" required>
+                </div>
+                <div class="horizontal">
+                    <span>Surname:</span><input type="text" class="surname" required>
+                </div>
+                <div class="horizontal">
+                    <span>Password:</span><input type="password" class="password" required>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-buttons">
+                    <input type="button" class="enter" value="Registrati">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="list">
+        <div id="title">
+            <h1>Scegli il film che preferisci</h1>
+        </div>
+        <section id="grid">
+            <a class="poster" data-imdb="tt0241527"><img src=""></a>
+            <a class="poster" data-imdb="tt0120338"><img src=""></a>
+            <a class="poster" data-imdb="tt0499549"><img src=""></a>
+            <a class="poster" data-imdb="tt0411008"><img src=""></a>
+            <a class="poster"><img src=""></a>
+            <a class="poster"><img src=""></a>
+            <a class="poster"><img src=""></a>
+        </section>
+    </section>
+
+    <section id="details" class="hide">
+        <p id="backtogrid">⇦</p>
+        <div id="left">
+            <img src="">
+        </div>
+        <div id="right">
+            <div id="content-title"></div>
+            <div id="inside">
+                <div id="inside-left"></div>
+                <div id="inside-right"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>JustWatch GmbH </p>
+        <p>Saarbrücker Straße 38 </p>
+        <p>DE - 10405 Berlin</p><br>
+        <p class="copyright">JustWatchh is a registered trademark</p>
+        <p class="copyright">© 2025 JustWatch</p>
+    </footer>
+</body>
+
+</html>

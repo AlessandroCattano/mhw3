@@ -1,0 +1,258 @@
+body{
+    background-image: url(" global-home-screen.png");
+    background-size: cover;
+}
+
+#title {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 15vh;  
+    color: white;
+    width: 100%;
+}
+
+#list.hide{
+    display: none;
+}
+
+#details.hide{
+    display: none;
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#grid .poster{
+    width: 15vw;
+    height: 35vh;
+}
+
+.poster img{
+    width: 150px;
+    height: 238px;
+    cursor: pointer;
+}
+
+#details{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    align-items: center;
+}
+
+#backtogrid{
+    cursor: pointer;
+    font-size: 100px;
+    color: rgb(248, 177, 0);
+    margin-left: 2vw;
+    margin-top: 13vh;
+}
+
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 60vh;
+    margin-left: 1vw;
+}
+
+#left img{
+    max-height: 50vh;
+    border: white 2px solid;
+    position: fixed;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5vw;
+    border: #D1D5DB 2px solid;
+    background-color: #1E2A38;
+
+}
+
+#right h1{
+    text-align: left;
+    padding-left: 2%;
+}
+
+#right p{
+    text-align: left;
+    padding-left: 2%;
+    color: rgb(248, 177, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+#add-to-list{
+    cursor: pointer;
+    margin: 0;
+    margin-right: 20px;
+    font-size: 45px ;
+}
+
+#content-title{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    align-items: center;
+}
+
+#inside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60%;
+}
+
+#inside-left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: #2C3E50;
+}
+
+#inside-right{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: #2C3E50;
+}
+
+#plot-description{
+    height: auto;
+}
+
+.ileft{
+    height: auto;
+    border: black 2px solid;
+}
+
+.iright{
+    height: 25%;
+    border: black 2px solid;
+}
+
+.ileft p{
+    align-items: center;
+}
+
+.iright p{
+    align-items: center;
+}
+
+#track{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;   
+    border: black 2px solid;
+}
+
+#track p{
+    color: #2ECC71;
+}
+
+#song_url{
+    display: inline;
+    color: rgb(248, 177, 0);
+    text-decoration: underline;
+}
+
+#comments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color:  #8B0000;
+}
+
+@media (max-width: 970px) {
+    #title {
+        margin-top: 10vh; 
+    }
+
+    #backtogrid{
+        margin: 0;
+    }
+
+    #details{
+        flex-direction: column;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    #left{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #left img{
+        position: static;
+        height: 100%;
+        width: 45%;
+    }
+
+    #right{
+        width: 80%;
+        margin-left: 0;
+        margin-top: 5vh;
+        height: 100%;
+    }
+
+    .poster img{
+        max-height: 100%;
+    }
+
+    #grid .poster {
+        width: 33%; 
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 650px) {
+    #grid .poster {
+        width: 45%; 
+        margin-bottom: 5%;
+    }
+
+    #title-movie{
+        font-size: 20px;
+    } 
+
+    #inside{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #inside-left{
+        width: 100%;
+    }
+
+    #inside-right{
+        width: 100%;
+    }
+
+    .ileft .iright{
+        width: 100%;
+    }
+
+    #left img{
+        width: 60%;
+    }
+
+
+}
+
